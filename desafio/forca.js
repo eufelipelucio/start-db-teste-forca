@@ -26,17 +26,16 @@ class Forca {
       : this.palavraCerta.includes("_")
       ? "aguardando chute"
       : "ganhou";
-  } // Possiveis valores: "perdeu", "aguardando chute" ou "ganhou"
+  } 
 
   buscarDadosDoJogo() {
     return {
-      letrasChutadas: this.letrasChutadas, // Deve conter todas as letras chutadas
-      vidas: this.vidas, // Quantidade de vidas restantes
-      palavra: this.palavraCerta, // Deve ser um array com as letras que já foram acertadas ou o valor "_" para as letras não identificadas
+      letrasChutadas: this.letrasChutadas,
+      vidas: this.vidas, 
+      palavra: this.palavraCerta, 
     };
   }
 
-  //Funções para ajudar nas validações
   adicionaLetrasChutadas(letra) {
     this.letrasChutadas.push(letra);
   }
